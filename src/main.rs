@@ -21,7 +21,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("CID is {:?}", cid);
     let (bytecode, json) = prepare_code(args.path.as_path())?;
     let (accounts, contract) = deploy_ethereum_contract(bytecode.as_str(), json.as_bytes()).await?;
-    let cid_returned = ethereum_store(accounts, contract, cid).await?;
+    let cid_returned = ethereum_store(accounts, &contract, cid).await?;
     println!("CID returned is {:?}", cid_returned);
     Ok(())
 }

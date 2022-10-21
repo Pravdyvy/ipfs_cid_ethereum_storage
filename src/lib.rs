@@ -48,7 +48,7 @@ pub async fn deploy_ethereum_contract(
 }
 pub async fn ethereum_store(
     accounts: Vec<H160>,
-    contract: Contract<Http>,
+    contract: &Contract<Http>,
     cid: String,
 ) -> web3::contract::Result<String> {
     contract
