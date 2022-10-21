@@ -19,7 +19,7 @@ $ cargo build
 You can run compiled binary(it is ipfs_cid_ethereum_storage/target/debug/ipfs_cid_ethereum_storage)
 or simply run from cargo:
 
-$ cargo run -P <PATH>
+$ cargo run -P PATH
 
 where PATH - is path to artifacts and source(for example "~/ipfs_cid_ethereum_storage")
 
