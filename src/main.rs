@@ -3,7 +3,6 @@ use std::path::PathBuf;
 use clap::Parser;
 
 use ipfs_cid_ethereum_storage::{ipfs_store,prepare_code,deploy_ethereum_contract,ethereum_store};
-//use web3::Result;
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
